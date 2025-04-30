@@ -9,23 +9,48 @@ import SwiftUI
 
 struct MenuPrincipal: View {
     var platosPrincipales = ["Ceviche", "Lomo Saltado", "Ají de Gallina", "Pollo a la Brasa"]
-    var imagenesCarrusel = ["comida1", "comida2", "comida3"] // Nombres de tus imágenes en Assets.xcassets
+    var imagenesCarrusel = ["comida1", "comida2", "comida3","comida4","comida5"] // Nombres de tus imágenes en Assets.xcassets
 
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
                 
-                // NAVBAR
-                HStack {
-                    Text("Restaurante Delicioso")
+                HStack {//Navbar
+                    Text("Restaurante ")
                         .font(.title2)
                         .bold()
                         .foregroundColor(.white)
+                        .padding(1)
+                    
                     Spacer()
+                    NavigationLink(destination: MenuPrincipal()) {
+                        Text("Menu")
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 3)
+                    }
+                    
+                    NavigationLink(destination: PaginaProductos()) {
+                        Text("Productos")
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 3)
+                    }
+                    
+                    NavigationLink(destination: PaginaReservas()) {
+                        Text("Reservas")
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 7)
+                    }
+                    NavigationLink(destination: ContentView()) {
+                        Image(systemName: "door.right.hand.open")
+                                .foregroundColor(.white)
+                                .imageScale(.large)
+                                .padding(.horizontal, 2)
+                    }
+                    
                 }
                 .padding()
-                .background(Color.red)
-                
+                .background(Color.orange)
+                //Fin delnav bar
                 ScrollView {
                     VStack(spacing: 20) {
                         
@@ -68,6 +93,18 @@ struct MenuPrincipal: View {
                                 .padding(.horizontal)
                             }
                         }
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("Quiénes Somos")
+                                .font(.title2)
+                                .bold()
+                                .padding(.horizontal)
+
+                            Text("En Restaurante Delicioso nos apasiona ofrecer comida peruana auténtica con los mejores ingredientes. Nuestra misión es brindar una experiencia culinaria inolvidable para toda la familia.")
+                                .font(.body)
+                                .foregroundColor(.gray)
+                                .padding(.horizontal)
+                        }
+
                         
                         Spacer()
                     }

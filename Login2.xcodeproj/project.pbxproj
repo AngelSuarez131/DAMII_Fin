@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		796B75B52DC2C6D9003BFF35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 796B75B42DC2C6D9003BFF35 /* GoogleService-Info.plist */; };
 		799131BC2DC01D5600EE106F /* Login2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131BB2DC01D5600EE106F /* Login2App.swift */; };
 		799131BE2DC01D5600EE106F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131BD2DC01D5600EE106F /* ContentView.swift */; };
 		799131C02DC01D5800EE106F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799131BF2DC01D5800EE106F /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		796B75B42DC2C6D9003BFF35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		799131B82DC01D5600EE106F /* Login2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799131BB2DC01D5600EE106F /* Login2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2App.swift; sourceTree = "<group>"; };
 		799131BD2DC01D5600EE106F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				799131BB2DC01D5600EE106F /* Login2App.swift */,
 				799131BD2DC01D5600EE106F /* ContentView.swift */,
 				799131BF2DC01D5800EE106F /* Assets.xcassets */,
+				796B75B42DC2C6D9003BFF35 /* GoogleService-Info.plist */,
 				799131C12DC01D5800EE106F /* Preview Content */,
 				799131E72DC02A0300EE106F /* MenuPrincipal.swift */,
 			);
@@ -242,6 +245,7 @@
 			files = (
 				799131C32DC01D5800EE106F /* Preview Assets.xcassets in Resources */,
 				799131C02DC01D5800EE106F /* Assets.xcassets in Resources */,
+				796B75B52DC2C6D9003BFF35 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
