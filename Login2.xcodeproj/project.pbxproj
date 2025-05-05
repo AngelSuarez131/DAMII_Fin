@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		796B75B52DC2C6D9003BFF35 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 796B75B42DC2C6D9003BFF35 /* GoogleService-Info.plist */; };
-		799131BC2DC01D5600EE106F /* Login2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131BB2DC01D5600EE106F /* Login2App.swift */; };
+		796B75B92DC2DB9D003BFF35 /* PaginaCarrito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B75B82DC2DB9D003BFF35 /* PaginaCarrito.swift */; };
+		796B75BD2DC2DEB8003BFF35 /* Login2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796B75BC2DC2DEB8003BFF35 /* Login2App.swift */; };
 		799131BE2DC01D5600EE106F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131BD2DC01D5600EE106F /* ContentView.swift */; };
 		799131C02DC01D5800EE106F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799131BF2DC01D5800EE106F /* Assets.xcassets */; };
 		799131C32DC01D5800EE106F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799131C22DC01D5800EE106F /* Preview Assets.xcassets */; };
@@ -18,6 +19,10 @@
 		799131E82DC02A0300EE106F /* MenuPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131E72DC02A0300EE106F /* MenuPrincipal.swift */; };
 		799131EA2DC02AEF00EE106F /* PaginaProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131E92DC02AEF00EE106F /* PaginaProductos.swift */; };
 		799131EC2DC02B0F00EE106F /* PaginaReservas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799131EB2DC02B0F00EE106F /* PaginaReservas.swift */; };
+		79C5A7172DC9545600012EF1 /* PaginaPago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A7162DC9545600012EF1 /* PaginaPago.swift */; };
+		79C5A7192DC95A1000012EF1 /* AgregarReserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A7182DC95A1000012EF1 /* AgregarReserva.swift */; };
+		79C5A71C2DC9670A00012EF1 /* Db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A71A2DC9670A00012EF1 /* Db.xcdatamodeld */; };
+		79C5A71E2DC968EE00012EF1 /* ReservaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C5A71D2DC968EE00012EF1 /* ReservaManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +44,9 @@
 
 /* Begin PBXFileReference section */
 		796B75B42DC2C6D9003BFF35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		796B75B82DC2DB9D003BFF35 /* PaginaCarrito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaCarrito.swift; sourceTree = "<group>"; };
+		796B75BC2DC2DEB8003BFF35 /* Login2App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login2App.swift; sourceTree = "<group>"; };
 		799131B82DC01D5600EE106F /* Login2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		799131BB2DC01D5600EE106F /* Login2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2App.swift; sourceTree = "<group>"; };
 		799131BD2DC01D5600EE106F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		799131BF2DC01D5800EE106F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799131C22DC01D5800EE106F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,6 +58,10 @@
 		799131E72DC02A0300EE106F /* MenuPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipal.swift; sourceTree = "<group>"; };
 		799131E92DC02AEF00EE106F /* PaginaProductos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaProductos.swift; sourceTree = "<group>"; };
 		799131EB2DC02B0F00EE106F /* PaginaReservas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaReservas.swift; sourceTree = "<group>"; };
+		79C5A7162DC9545600012EF1 /* PaginaPago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaPago.swift; sourceTree = "<group>"; };
+		79C5A7182DC95A1000012EF1 /* AgregarReserva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarReserva.swift; sourceTree = "<group>"; };
+		79C5A71B2DC9670A00012EF1 /* Db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Db.xcdatamodel; sourceTree = "<group>"; };
+		79C5A71D2DC968EE00012EF1 /* ReservaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservaManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +112,19 @@
 		799131BA2DC01D5600EE106F /* Login2 */ = {
 			isa = PBXGroup;
 			children = (
-				799131EB2DC02B0F00EE106F /* PaginaReservas.swift */,
-				799131E92DC02AEF00EE106F /* PaginaProductos.swift */,
-				799131BB2DC01D5600EE106F /* Login2App.swift */,
+				79C5A71D2DC968EE00012EF1 /* ReservaManager.swift */,
 				799131BD2DC01D5600EE106F /* ContentView.swift */,
+				79C5A7182DC95A1000012EF1 /* AgregarReserva.swift */,
+				79C5A7162DC9545600012EF1 /* PaginaPago.swift */,
+				796B75B82DC2DB9D003BFF35 /* PaginaCarrito.swift */,
+				799131E72DC02A0300EE106F /* MenuPrincipal.swift */,
+				799131EB2DC02B0F00EE106F /* PaginaReservas.swift */,
+				796B75BC2DC2DEB8003BFF35 /* Login2App.swift */,
+				799131E92DC02AEF00EE106F /* PaginaProductos.swift */,
 				799131BF2DC01D5800EE106F /* Assets.xcassets */,
+				79C5A71A2DC9670A00012EF1 /* Db.xcdatamodeld */,
 				796B75B42DC2C6D9003BFF35 /* GoogleService-Info.plist */,
 				799131C12DC01D5800EE106F /* Preview Content */,
-				799131E72DC02A0300EE106F /* MenuPrincipal.swift */,
 			);
 			path = Login2;
 			sourceTree = "<group>";
@@ -270,11 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C5A7192DC95A1000012EF1 /* AgregarReserva.swift in Sources */,
+				796B75B92DC2DB9D003BFF35 /* PaginaCarrito.swift in Sources */,
+				796B75BD2DC2DEB8003BFF35 /* Login2App.swift in Sources */,
 				799131EC2DC02B0F00EE106F /* PaginaReservas.swift in Sources */,
+				79C5A71E2DC968EE00012EF1 /* ReservaManager.swift in Sources */,
 				799131BE2DC01D5600EE106F /* ContentView.swift in Sources */,
+				79C5A71C2DC9670A00012EF1 /* Db.xcdatamodeld in Sources */,
 				799131E82DC02A0300EE106F /* MenuPrincipal.swift in Sources */,
-				799131BC2DC01D5600EE106F /* Login2App.swift in Sources */,
 				799131EA2DC02AEF00EE106F /* PaginaProductos.swift in Sources */,
+				79C5A7172DC9545600012EF1 /* PaginaPago.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +613,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79C5A71A2DC9670A00012EF1 /* Db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79C5A71B2DC9670A00012EF1 /* Db.xcdatamodel */,
+			);
+			currentVersion = 79C5A71B2DC9670A00012EF1 /* Db.xcdatamodel */;
+			path = Db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 799131B02DC01D5600EE106F /* Project object */;
 }

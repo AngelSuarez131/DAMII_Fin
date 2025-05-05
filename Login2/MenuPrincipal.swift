@@ -1,59 +1,52 @@
-//
-//  MenuPrincipal.swift
-//  Login2
-//
-//  Created by Suite on 28/04/25.
-//
-
 import SwiftUI
 
 struct MenuPrincipal: View {
-    var platosPrincipales = ["Ceviche", "Lomo Saltado", "Ají de Gallina", "Pollo a la Brasa"]
-    var imagenesCarrusel = ["comida1", "comida2", "comida3","comida4","comida5"] // Nombres de tus imágenes en Assets.xcassets
+    var platosPrincipales = ["Ceviche", "Lomo Saltado", "Ají de Gallina", "Pollo a la Brasa","Causa"]
+    var imagenesCarrusel = ["comida1", "comida2", "comida3", "comida4", "comida5"]
 
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
-                
-                HStack {//Navbar
-                    Text("Restaurante ")
-                        .font(.title2)
+                // NAVBAR
+                HStack {
+                    Text("Restaurante")
+                        .font(.headline)
                         .bold()
                         .foregroundColor(.white)
-                        .padding(1)
-                    
+
                     Spacer()
+
                     NavigationLink(destination: MenuPrincipal()) {
-                        Text("Menu")
+                        Text("Menú")
+                            .font(.subheadline)
                             .foregroundColor(.white)
-                            .padding(.horizontal, 3)
                     }
-                    
+
                     NavigationLink(destination: PaginaProductos()) {
                         Text("Productos")
+                            .font(.subheadline)
                             .foregroundColor(.white)
-                            .padding(.horizontal, 3)
                     }
-                    
+
                     NavigationLink(destination: PaginaReservas()) {
                         Text("Reservas")
+                            .font(.subheadline)
                             .foregroundColor(.white)
-                            .padding(.horizontal, 7)
                     }
+
                     NavigationLink(destination: ContentView()) {
                         Image(systemName: "door.right.hand.open")
-                                .foregroundColor(.white)
-                                .imageScale(.large)
-                                .padding(.horizontal, 2)
+                            .foregroundColor(.white)
+                            .imageScale(.medium)
                     }
-                    
                 }
                 .padding()
+                .padding(.top, 75) // separa del notch
                 .background(Color.orange)
-                //Fin delnav bar
+                .zIndex(1)
+
                 ScrollView {
-                    VStack(spacing: 20) {
-                        
+                    VStack(spacing: 30) {
                         // CARRUSEL
                         TabView {
                             ForEach(imagenesCarrusel, id: \.self) { imagen in
@@ -62,37 +55,43 @@ struct MenuPrincipal: View {
                                     .scaledToFill()
                                     .frame(height: 200)
                                     .clipped()
+                                    .cornerRadius(10)
+                                    .padding(.horizontal)
                             }
                         }
-                        .frame(height: 200)
-                        .tabViewStyle(PageTabViewStyle())
-                        
+                        .frame(height: 220)
+                        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+
                         // SECCIÓN PLATOS PRINCIPALES
-                        VStack(alignment: .leading) {
+                        VStack(alignment: .leading, spacing: 10) {
                             Text("Platillos Principales")
                                 .font(.title2)
                                 .bold()
                                 .padding(.horizontal)
-                            
+
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 15) {
                                     ForEach(platosPrincipales, id: \.self) { plato in
                                         VStack {
                                             Rectangle()
-                                                .fill(Color.gray.opacity(0.3))
+                                                .fill(Color.gray.opacity(0.2))
                                                 .frame(width: 150, height: 100)
-                                                .overlay(Text(plato).bold())
+                                                .overlay(Text(plato)
+                                                    .font(.headline)
+                                                    .foregroundColor(.black))
                                                 .cornerRadius(10)
-                                            
+
                                             Text(plato)
                                                 .font(.caption)
-                                                .foregroundColor(.black)
+                                                .foregroundColor(.gray)
                                         }
                                     }
                                 }
                                 .padding(.horizontal)
                             }
                         }
+
+                        // SECCIÓN QUIÉNES SOMOS
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Quiénes Somos")
                                 .font(.title2)
@@ -105,11 +104,10 @@ struct MenuPrincipal: View {
                                 .padding(.horizontal)
                         }
 
-                        
-                        Spacer()
+                        Spacer(minLength: 30)
                     }
                 }
-                
+
                 // FOOTER
                 VStack {
                     Divider()
@@ -130,4 +128,3 @@ struct MenuPrincipal_Previews: PreviewProvider {
         MenuPrincipal()
     }
 }
-
